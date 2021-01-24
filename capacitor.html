@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Components | Capacitor </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        
+        <div class="logo"> 
+            <div class="image">
+              
+            </div>
+            <div class="name">
+            <a href="components.html">  <i class="ri-arrow-go-back-line"></i>Back</a>
+            </div>
+        </div>
+      
+        
+        </nav>
+     </div>
+
+     <div class="rescon">
+         <h1> Capacitor </h1>
+         <h2><span>Topic to be cover !</span></h2>
+         <h4>1) What is <b>Capacitor</b> ?</h4>
+         <h4>2) <b>Classification</b> of Capacitor. </h4>
+         <h4>3) <b>Type</b> of Capacitor.</h4>
+         <img src="cpa.png" alt="">
+         <h3>1) What is <b>Capacitor</b> ?</h3>
+         <p>A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field. The forms of practical capacitors vary widely, but all contain at least two electrical conductors (plates) separated by a dielectric (i.e. an insulator that can store energy by becoming polarized). The conductors can be thin films, foils or sintered beads of metal or conductive electrolyte, etc. The nonconducting dielectric acts to increase the capacitor's charge capacity. A dielectric can be glass, ceramic, plastic film, air, vacuum, paper, mica, oxide layer etc. Capacitors are widely used as parts of electrical circuits in many common electrical devices. Unlike a resistor, an ideal capacitor does not dissipate energy.
+              Instead, a capacitor stores energy in the form of an electrostatic field between its plates.</p>
+         <h3>2) <b>Classification</b> of Capacitor.</h3>
+         <p>
+            Capacitor is <b>passive electronic</b> component. <br> Capacitor are classified into two parts:
+            <br>
+            a) <b>Fixed</b> capacitor <br> Non-polarized,Polarized
+            <br>
+            b) <b>Variable</b> capacitor <br>Tuning,Trimmer
+         <h3>3) <b>Type</b> of Capacitor.</h3>
+         <p> a) <b>Fixed</b> capacitor <br>A fixed capacitor is one where the conducting surfaces are <b>not adjustable</b>. <br><b>Polarized</b><br>Polar capacitors or polarized capacitors are such type of a capacitor whose terminals (electrodes) have polarity; positive and negative.
+
+            The positive terminal should be connected to positive of supply and negative to negative. Reversing the polarity will destroy the capacitor. These type of capacitors are only used in DC applications. <br><b>Non-polarized</b><br>Non-polar or non-polarized capacitors are such types of capacitors whose terminals have no fixed polarity. They can be used either way in a circuit. Due to its non-polarized terminals, they are used in DC circuits as well as AC circuits.
+
+            They are cheaper than Polar capacitor but they have low capacitance and high range of voltage ratings from a few volts to thousands of volts.</p>
+         <p>b) <b>Variable</b> capacitor <br>Variable capacitors are pretty much just as they are named, their capacitance <b>can change</b> by physically or electronically moving the plates. <br><b>Tuning</b><br>Tuning capacitors are commonly used in radios where you tune into a radio station. Originally, radios had a knob that could be turned changing the distance between the capacitor's plates. <br><b>Trimmer</b><br>Trimmer capacitors are used in the calibration of equipment after it has been manufactured. They are commonly located on printed circuit boards, and if there is any variation in their capacitance over time, they can be adjusted, but they are only designed to be able to handle a few adjustments. They commonly hold 100 volts, but some can go up to 300 volts.</p>
+     </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

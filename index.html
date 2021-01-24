@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Electro Lab  </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   <div class="back">
+     <div class="navbar">
+      <nav>
+        <div class="invisble">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo"> 
+            <div class="image">
+              <img src="logo.png" alt="">
+            </div>
+            <div class="name">
+              <span>Electro <b>Lab</b></span>
+            </div>
+        </div>
+      
+          <div class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="components.html">COMPONENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </div>
+        
+        </nav>
+     </div>
+      <div class="land">
+         
+           <img id="one" src="ui.png" alt="">
+           <img id="two" src="res.png" alt="">
+           <div class="container">
+             <h2> WE ARE PROVIDING</h2>
+            <h1> <b>ELECTRONIC COMPONENTS</b> </h1>
+            <h2>INFORMATION !</h2>
+           <a href="components.html"> <button>EXPLORE NOW</button></a>
+          </div>
+         
+      
+      </div>
+   </div>
+
+   <div class="why">
+     <div class="pulse-loader">
+      <div></div>
+      <div></div>
+     </div>
+        <h2>WHY <b>Electro Lab ?</b> </h2>
+        <div class="parag">
+          <p ><i class="ri-send-plane-2-fill"></i>No registration, just tap and go.</p>
+        <p><i class="ri-send-plane-2-fill"></i>No Ads, only pure content. </p>
+        <p><i class="ri-send-plane-2-fill"></i>Clear and user friendly.</p>
+        <p><i class="ri-send-plane-2-fill"></i>We are always there to hear you.</p>
+        </div>
+           <div id="box" class="lax" data-lax-preset="spin">  </div>
+   </div>
+
+   <div class="footer">
+         <div class="links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="components.html">COMPONENTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+         </div>
+         <hr>
+         <h5>Electro Lab &copy; -2020</h5>
+   </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

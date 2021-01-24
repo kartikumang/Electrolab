@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Components | Inductor </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        
+        <div class="logo"> 
+            <div class="image">
+              
+            </div>
+            <div class="name">
+            <a href="components.html">  <i class="ri-arrow-go-back-line"></i>Back</a>
+            </div>
+        </div>
+      
+        
+        </nav>
+     </div>
+
+     <div class="rescon">
+         <h1> Inductor </h1>
+         <h2><span>Topic to be cover !</span></h2>
+         <h4>1) What is <b>Inductor</b> ?</h4>
+         <h4>2) <b>Classification</b> of Inductor. </h4>
+         <h4>3) <b>Type</b> of Inductor.</h4>
+         <img src="inductor.png" alt="">
+         <h3>1) What is <b>Inductor</b> ?</h3>
+         <p>Any element which produces <b>magnetic field</b> when carrying an electric current can be termed as inductor. An inductor has the property that it resists a change in current.
+            It is usually in the form of coil, wound over a magnetic or even air at its core .Even a straight wire produces a magnetic field, and can be considered as inductor (CTs often have a straight wire / cable as a primary).</p>
+         <h3>2) <b>Classification</b> of Inductor.</h3>
+          <p>
+            Inductor is <b>passive electronic</b> component. <br> Inductors are classified according to the types of core used. These are:
+            <br>
+            a) <b>Air core</b> Inductor
+            <br>
+            b) <b>Iron core</b> Inductor
+            <br>
+            c) <b>Ferrite core</b> Inductor</p>
+         <h3>3) <b>Type</b> of Inductor.</h3>
+          <p>  a) <b>Air core</b> Inductor <br>It consisit of number of turns of wire wound on hollow tube. In this, air acts as core, hence the name is Air core inductor. In air core inductror, magnetic flux loss are present but 
+            no core losses even at high frequency. So, air core inductor can be used a for RF application, known as Chokes. </p>
+            <p>b) <b>Iron core</b> Inductor <br>The inductance value on the air core inductor depends on the number of spires (turns), length, diameter, thickness of the spiral, etc. The air core inductance range
+                 values is limited. In order to increase the inductance value of an inductor, an iron core is placed inside it, so an iron core
+                  inductor is used. <br>This iron core has very special magnetic characteristics. What they do is to reinforce the magnetic 
+                  field. The magnetism of the core material depends on the bias of  “the molecular magnetic domains”, when the magnetic field
+                   that affects the inductor changes continuously. <br>These domains should be able to change its position so that the core 
+                   meets its goal. The magnetic domains may or may not follow the magnetic field variations depending on the material the 
+                   core is made of.</p>
+                   <p>  c) <b>Ferrite core</b> Inductor <br>In electronics, a ferrite core is a type of magnetic core made of ferrite 
+                    on which the windings of electric transformers and other wound components such as inductors are formed.
+                     It is used for its properties of high magnetic permeability coupled with low electrical conductivity (which helps prevent eddy currents).</p>
+     </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

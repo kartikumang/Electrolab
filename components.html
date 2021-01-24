@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Electro Lab | Components  </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        <div class="invisble">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo"> 
+            <div class="image">
+              <img src="logo.png" alt="">
+            </div>
+            <div class="name">
+              <span>Electro <b>Lab</b></span>
+            </div>
+        </div>
+      
+          <div class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="components.html">COMPONENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </div>
+        
+        </nav>
+     </div>
+      
+  
+       <div class="com">
+      <h1>What is <b>Electronic Components ?</b></h1>
+      <p>There are numerous basic electronic components that are used for building electronic circuits.
+         Without these components, circuit designs are never complete or didn’t function well. These components 
+         include resistors, diodes, capacitors, integrated circuits, and so on. Some of these components
+          consists of two or more terminals which are soldered to circuit boards. Some may be packaged 
+          type like integrated circuits in which different semiconductor devices are integrated. 
+          Here is a brief overview on each of these basic electronic components and you can get in depth 
+          information by clicking links attached to each component.</p>
+          <h2>It is mainly <b>two types :</b> </h2>
+          <h6>1)<b> Passive</b> Components <p>A passive element is an electrical component that does not generate power, but instead dissipates, stores, and/or releases it. Passive elements include resistances, capacitors, and coils (also called inductors).
+             </p><br>2) <b>Active</b>  Components <p>An active component is an electronic component which supplies energy 
+               to a circuit. Common examples of active components include: Voltage sources. Current sources.</p></h6>
+       </div>
+        <div class="pcom">
+      <h6><b>Passive</b> Components</h6>
+      <div class="pcard">
+          <div class="card">
+             <img src="resi.png" alt="">
+             <a href="resistance.html">Resistances</a>
+          </div>
+          <div class="card">
+           <img src="ind.png" alt="">
+           <a href="inductor.html">Inductors</a>
+          </div>
+          <div class="card">
+           <img src="cap.png" alt="">
+           <a href="capacitor.html">Capacitors</a>
+          </div>
+        </div>
+        </div>
+       <div class="acom">
+    <h6><b>Active</b> Components</h6>
+    <div class="acard">
+        <div class="card">
+           <img src="diode.png" alt="">
+           <a href="diode.html">Diodes</a>
+        </div>
+        <div class="card">
+         <img src="tra.png" alt="">
+         <a href="transistor.html">Transistors</a>
+        </div>
+        <div class="card">
+         <img src="ic.png" alt="">
+         <a href="ic.html">Integrated-Circuits</a>
+        </div>
+        
+      </div>
+       </div>
+    
+       <div class="remain">
+      <div class="pcard">
+        <div class="card">
+           <img src="display.png" alt="">
+           <a href="display.html">Display-Device</a>
+        </div>
+        <div class="card">
+         <img src="battery.png" alt="">
+         <a href="battery.html">Battery</a>
+        </div>
+        <div class="card">
+          <img src="generator.png" alt="">
+          <a href="generator.html">Generator</a>
+         </div>
+      </div>
+       </div>
+ 
+   
+  
+
+   
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

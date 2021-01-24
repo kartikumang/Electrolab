@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Components | Diode </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        
+        <div class="logo"> 
+            <div class="image">
+              
+            </div>
+            <div class="name">
+            <a href="components.html">  <i class="ri-arrow-go-back-line"></i>Back</a>
+            </div>
+        </div>
+      
+        
+        </nav>
+     </div>
+
+    <div class="rescon">
+        <h1> Diode </h1>
+        <h1><span> Introduction</span></h1>
+        <p>A diode is a dispositive made of a semiconductor material, which has two terminals or electrodes (di-ode), that act like an on-off switch. When the diode is “on”, it acts as a short circuit
+            and passes all current. When it is “off”, it behaves like an open circuit and passes no current.
+            The two terminals are different and are marked as plus and minus in figure 1. If the polarity
+            of the applied voltage matches that of the diode (forward bias), then the diode turns “on”.
+            When the applied voltage polarity is opposite (reverse bias), it turns “off”. Of course this is
+            the theoretical behaviour of an ideal diode, but it can be seen as a good approximation for a
+            real diode. <br>A diode is simply a pn junction (see ’Introduction into Semiconductor Physics’) with the
+            following characteristics: <br>
+           <b> • Under forward bias, it needs a small voltage to conduct. This voltage drop is maintained
+            during conduction. </b><br>
+          <b>  • The maximum forward current is limited by heat-dissipation ability of the diode. Usually
+            it is around 1000 mA.</b> <br>
+           <b> • There is a small reverse current.</b> <br>
+           <img src="dsy.png" alt="">
+            </p>
+         <h3><b> Types of </b>diodes</h3> 
+         <p>We can distinguish the following types of diodes:
+          • Rectifier diodes are typically used for power supply applications. Within the power
+          supply, you will see diodes as elements that convert AC power to DC power; <br>
+          • Switching diodes have lower power ratings than rectifier diodes, but can function better
+          in high frequency application and in clipping and clamping operations that deal with
+          short-duration pulse waveforms; <br>
+          Zener diodes, a special kind of diode that can recover from breakdown caused when
+the reverse-bias voltage exceeds the diode breakdown voltage. These diodes are
+commonly used as voltage-level regulators and protectors against high voltage surges; <br>
+• Optical diodes; <br>
+• Special diodes, such as varactors (diodes with variable capacity), tunnel diodes or
+Schottky diodes. <br>
+
+
+        </p>
+        <h3><b>Zener </b>Diode</h3>
+        <p>A conventional solid-state diode will not let current flow up to its breakdown voltage if reversebiased. By exceeding the breakdown voltage, a conventional diode is destroyed during
+          breakdown due to excess current and overheating. In case of forward-bias (in the direction
+          of the arrow), the diode exhibits a voltage drop of roughly 0.7 V. The voltage drop depends
+          on the type of the diode. <br>A Zener diode exhibits almost the same properties, except the device is especially designed so as to have a greatly reduced breakdown voltage, the so-called Zener voltage. A
+          Zener diode contains a heavily doped pn junction allowing electrons to tunnel from the valence band of the p-type material to the conduction band of the n-type material. A reversebiased Zener diode will exhibit a controlled breakdown and let the current flow to keep the
+          voltage across the Zener diode at the Zener voltage. For example, a 3.2 V Zener diode will
+          exhibit a voltage drop of 3.2 V if reverse biased. However, the current is not unlimited, so
+          the Zener diode is typically used to generate a reference voltage for an amplifier stage. The
+          breakdown voltage can be controlled quite accurately in the doping process. Tolerances up
+          to 0.05% are achievable, though the most widely used tolerances are 5% and 10%. The ef fect was discovered by the American physicist Clarence Melvin Zener. In figure 9, the Zener
+          behaviour is illustrated:</p>
+         
+    </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

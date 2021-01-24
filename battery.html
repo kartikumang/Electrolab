@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Components | Battery </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        
+        <div class="logo"> 
+            <div class="image">
+              
+            </div>
+            <div class="name">
+            <a href="components.html">  <i class="ri-arrow-go-back-line"></i>Back</a>
+            </div>
+        </div>
+      
+        
+        </nav>
+     </div>
+
+    <div class="rescon">
+        <h1> Battery </h1>
+        <h1><span> Introduction</span></h1>
+        <h3>What is <b>Battery ?</b></h3>
+        <p>Batteries are a collection of one or more cells whose chemical reactions create a flow of electrons in a circuit. All batteries are made up of three basic components: an anode (the '-' side), a cathode (the '+' side), and some kind of electrolyte (a substance that chemically reacts with the anode and cathode). <br>Batteries that must be thrown away after use are known as primary batteries. Batteries that can be recharged are called secondary batteries. <br>Without batteries, your quadcopter would have to be tethered to the wall, you would have to hand crank your car, and your Xbox controller would have to plugged in all the time (like in the good old days). Batteries offer a way to store electrical potential energy in a portable container. <br>The invention of the modern battery is often attributed to Alessandro Volta. It actually started with a surprising accident involving the dissection of a frog.</p>
+        <img src="Battery_Types.jpg" alt="">
+        <h3><b>Types of Batteries</b></h3>
+        <p> 
+            Batteries are basically classified into 2 types: <br>
+            
+          1) <b>Non-rechargeable </b> batteries (primary batteries) <br>
+           2) <b> Rechargeable</b> batteries (secondary batteries) <br><b>Non-rechargeable Batteries</b> <br>
+           These are basically considered as primary batteries because they can be used only once. These batteries cannot be recharged and used again. <br><b>Rechargeable Batteries</b>
+           These are generally called as secondary batteries which can be recharged and can be reused. Though the cost is high, but they can be recharged and reused and can have a huge life span when properly used and safely charged.
+           
+            </p>
+    </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

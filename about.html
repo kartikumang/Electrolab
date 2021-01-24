@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Electro Lab | About Us  </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        <div class="invisble">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo"> 
+            <div class="image">
+              <img src="logo.png" alt="">
+            </div>
+            <div class="name">
+              <span>Electro <b>Lab</b></span>
+            </div>
+        </div>
+      
+          <div class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="components.html">COMPONENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </div>
+        
+        </nav>
+     </div>
+      
+     <div id="head"><h1>OUR <span>TEAM</span> </h1></div>
+
+    <div class="about">
+       <div class="our">
+        <h1>KARTIK GUPTA</h1>
+        <h2>UI/UX Desginer & Web-Developer</h2>
+       </div>
+        <div class="image">
+            <img src="kartik.jpeg" alt="">
+        </div>
+        <div class="ocu"></div>
+        <div class="clip">
+           <div class="big">
+            <div class="cir">
+                <a href="https://www.instagram.com/kartik_umang16/"><i class="ri-instagram-fill"></i></a>
+            </div>
+            <div class="cir">
+                <a href="https://github.com/kartikumang"><i class="ri-github-fill"></i></a>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="our">
+            <h1>MAYANK KUMAR</h1>
+        <h2>Graphic Desginer & Ethical Hacker</h2>
+        </div>
+        <div class="image">
+            <img src="mayank.jpeg" alt="">
+        </div>
+        <div class="ocu"></div>
+        <div class="clip">
+           <div class="big">
+            <div class="cir">
+                <a href=" https://www.instagram.com/i.g_leo/"><i class="ri-instagram-fill"></i></a>
+            </div>
+            <div class="cir">
+                <a href="https://github.com/gareebdeveloper"><i class="ri-github-fill"></i></a>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="about">
+     <div class="our">
+        <h1>KISHORE KUNAL</h1>
+        <h2>Content Writer</h2>
+     </div>
+        <div class="image">
+            <img src="kishore.jpeg" alt="">
+        </div>
+        <div class="ocu"></div>
+        <div class="clip">
+           <div class="big">
+            <div class="cir">
+                <a href="https://www.facebook.com/profile.php?id=100022289168599"><i class="ri-facebook-circle-fill"></i></a>
+            </div>
+            <div class="cir">
+                <a href="https://www.linkedin.com/in/kishore-kunal-a85343196"><i class="ri-linkedin-fill"></i></a>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="about">
+      <div class="our">
+        <h1>MILAN KHADDAR</h1>
+        <h2>Content Writer </h2>
+      </div>
+        <div class="image">
+            <img src="milan.jpeg" alt="">
+        </div>
+        <div class="ocu"></div>
+        <div class="clip">
+           <div class="big">
+            <div class="cir">
+                <a href="https://instagram.com/milan_0806?igshid=17feez6vem22p"><i class="ri-instagram-fill"></i></a>
+            </div>
+            <div class="cir">
+                <a href="https://www.facebook.com/jainmilankhaddar"><i class="ri-facebook-circle-fill"></i></a>
+            </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+  
+
+   <div class="footer">
+    <div class="links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="components.html">COMPONENTS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+     </div>
+         <hr>
+         <h5>Electro Lab &copy; -2020</h5>
+   </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

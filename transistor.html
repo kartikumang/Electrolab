@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Components | Transistor </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        
+        <div class="logo"> 
+            <div class="image">
+              
+            </div>
+            <div class="name">
+            <a href="components.html">  <i class="ri-arrow-go-back-line"></i>Back</a>
+            </div>
+        </div>
+      
+        
+        </nav>
+     </div>
+
+    <div class="rescon">
+        <h1> Transistor </h1>
+        <h1><span> Introduction</span></h1>
+        <p>Earlier, the critical and important component of an electronic device was a vacuum tube; it is an electron tube used to control electric current. The vacuum tubes worked but they are bulky, require higher operating voltages, high power consumption, yield lower efficiency, and cathode electron-emitting materials are used up in operation. So, that ended up as heat which shortened the life of the tube itself. To overcome these problems, John Bardeen, Walter Brattain, and William Shockley were invented a transistor at Bell Labs in the year of 1947. This new device was a much more elegant solution to overcome many of the fundamental limitations of vacuum tubes. <br>The transistor is a semiconductor device that can both conduct and insulate. A transistor can act as a switch and an amplifier. It converts audio waves into electronic waves and resistors, controlling electronic current. Transistors have a very long life, smaller in size, can operate on lower voltage supplies for greater safety, and required no filament current. The first transistor was fabricated with germanium. A transistor performs the same function as a vacuum tube triode but using semiconductor junctions instead of heated electrodes in a vacuum chamber. It is the fundamental building block of modern electronic devices and found everywhere in modern electronic systems.</p>
+        <img src="tr.jpg" alt="">
+        <p><b>Transistor Basics:</b><br>A transistor is a three-terminal device. Namely, <br><b>Base:</b> This is responsible for activating the transistor. <br>
+            <b>Collector:</b> This is the positive lead. <br>
+            <b>Emitter:</b> This is the negative lead. <br>The basic idea behind a transistor is that it lets you control the flow of current through one channel by varying the intensity of a much smaller current that’s flowing through a second channel.</p>
+            <h3><b>Types of Transistors</b></h3>
+            <p>There are two types of transistors is present; they are bipolar junction transistors (BJT), field-effect transistors (FET). A small current is flowing between the base and the emitter; the base terminal can control a larger current flow between the collector and the emitter terminals. For a field-effect transistor, it also has the three terminals, they are gate, source, and drain, and a voltage at the gate can control a current between source and drain. The simple diagrams of BJT and FET are shown in the figure below:</p>
+            <img src="bjt.png" alt="">
+    </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

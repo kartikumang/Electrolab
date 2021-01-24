@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Components | Display Device </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        
+        <div class="logo"> 
+            <div class="image">
+              
+            </div>
+            <div class="name">
+            <a href="components.html">  <i class="ri-arrow-go-back-line"></i>Back</a>
+            </div>
+        </div>
+      
+        
+        </nav>
+     </div>
+
+     <div class="rescon">
+         <h1> Display Device </h1>
+         <h2><span>Liquid Crystal Diode (LCD)</span></h2>
+         <p><b>Definition</b>: The LCD is defined as the diode that uses small cells and the ionised gases for the production of images. The LCD works on the modulating property of light. The light modulation is the technique of sending and receiving the signal through the light. The liquid crystal consumes a small amount of energy because they are the reflector and the transmitter of light. It is normally used for seven segmental display.</p>
+         <p><b>Construction of LCD</b><br>The liquid crystals are the organic compound which is in liquid form and shows the property of optical crystals. The layer of liquid crystals is deposited on the inner surface of glass electrodes for the scattering of light. The liquid crystal cell is of two types; they are Transmittive Type and the Reflective Type. <br><b>Transmittive Type</b> – In transmitter cell both the glass sheets are transparent so that the light is scattered in the forward direction when the cell becomes active. <br><b>Reflective Type </b> – The reflective type cell consists the reflecting surface of the glass sheet on one end. The light incident on the front surface of the cell is scattered by the activated cell. <br>Both the reflective and transmittive type cells appear brights, even under small ambient light conditions.</p>
+         <img src="lcd.jpg" alt="">
+         <p><b>Working Principle of LCD</b><br>The working principle of the LCD is of two types. They are the dynamic scattering type and the field effects type. Their details explanation is shown below. <br><b>Dynamic Scattering</b> <br> When the potential carrier flows through the light, the molecular alignment of the liquid crystal disrupts, and they produce disturbances. The liquid becomes transparent when they are not active. But when they are active their molecules turbulence causes scattered of light in all directions, and their cell appears bright. This type of scattering is known as the dynamic scattering. The construction of the dynamic scattering of the liquid crystal cell is shown in the figure. <br><b>Field Effect Type</b> <br> The construction of liquid crystals is similar to that of the dynamic scattering types the only difference is that in field effect type LCD the two thin polarising optical fibres are placed inside the each glass sheet. The liquid crystals used in field effect LCDs are of different scattering types that operated in the dynamic scattering cell. <br>The field affects type LCD uses the nematic material which twisted the unenergised light passing through the cell. The nematic type material means the liquid crystals in which the molecules are arranged in parallel but not in a well-defined plane. The light after passing through the nematic material passing through the optical filters and appears bright. When the cell has energised no twisting of light occurs, and the cell appears dull. <br><b>Advantages of LCD</b> <br> 1) The power consumption of LCD is low. The seven segmental display of LCD requires about 140μW which is the major advantages over LED which uses approximately 40mW per numeral.
+           <br>2) The cost of the LCD is low. <br><b>Disadvantages of LCD</b> <br>1) The LCD is a slow device because their turning on and off times are quite large. The turn-on time of the LCD is millisecond while there turn off time is ten milliseconds.
+          <br> 2) The LCD requires the large area.
+         <br>  3) The direct current reduces the lifespan of LCD. Therefore, the LCD uses with AC supply, having the frequency less than 500Hz.</p>
+         <h2><span>Light Emitting Diode (LED)</span></h2>
+         <p><b>Definition</b>: The LED is a PN-junction diode which emits light when an electric current passes through it in the forward direction. In the LED, the recombination of charge carrier takes place. The electron from the N-side and the hole from the P-side are combined and gives the energy in the form of heat and light. The LED is made of semiconductor material which is colourless, and the light is radiated through the junction of the diode.
+           <br> The LEDs are extensively used in segmental and dot matrix displays of numeric and alphanumeric character. The several LEDs are used for making the single line segment while for making the decimal point single LED is used.
+           <br><b>Construction of LED</b> <br> The recombination of the charge carrier occurs in the P-type material, and hence P-material is the surface of the LED. For the maximum emission of light, the anode is deposited at the edge of the P-type material. The cathode is made of gold film, and it is usually placed at the bottom of the N-region. This gold layer of cathode helps in reflecting the light to the surface. <br>The gallium arsenide phosphide is used for the manufacturing of LED which emits red or yellow light for emission. The LED are also available in green, yellow amber and red in colour. <br>The simple transistor can be used for off/on of a LED as shown in the figure above. The base current IB conducts the transistor, and the transistor conducts heavily. The resistance RC limits the current of the LED.
+        </p>
+        <img src="led.png" alt="">
+        <p><b>Working of LED</b><br>The working of the LED depends on the quantum theory. The quantum theory states that when the energy of electrons decreases from the higher level to lower level, it emits energy in the form of photons. The energy of the photons is equal to the gap between the higher and lower level. <br>The LED is connected in the forward biased, which allows the current to flows in the forward direction. The flow of current is because of the movement of electrons in the opposite direction. The recombination shows that the electrons move from the conduction band to valence band and they emits electromagnetic energy in the form of photons. The energy of photons is equal to the gap between the valence and the conduction band.</p>
+        <img src="wled.jpg" alt="">
+        <p><b>Advantages </b><br>1) The LED are smaller in sizes, and they can be stacked together to form numeric and alphanumeric display in the high-density matrix.
+           <br> 2) The intensity of the light output of the LED depends on the current flows through it. The intensity of their light can be controlled smoothly.
+           <br> 3) The LED are available which emits light in the different colours like red, yellow, green and amber. <br><b>Disadvantages </b><br> The LED consume more power as compared to LCD, and their cost is high. Also, it is not used for making the large display.</p>
+     </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>

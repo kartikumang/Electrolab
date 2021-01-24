@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Components | Generator </title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" sizes="16*16">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+</head>
+<body>
+   
+     <div class="navbar">
+      <nav>
+        
+        <div class="logo"> 
+            <div class="image">
+              
+            </div>
+            <div class="name">
+            <a href="components.html">  <i class="ri-arrow-go-back-line"></i>Back</a>
+            </div>
+        </div>
+      
+        
+        </nav>
+     </div>
+
+    <div class="rescon">
+        <h1> Generator </h1>
+        <h1><span> Introduction</span></h1>
+        <h3>What is an <b> Electric Generators</b> ?</h3>
+        <p>An electric generator is an electronic appliance that converts mechanical energy into electrical energy. Sources of mechanical energy include steam turbines, gas turbines, wind turbines, and even hand cranks. Electrical generators provide nearly all power that is required for electric power grids. 
+           <br>The reverse conversion of electrical energy to mechanical energy is done by an electric motor. Both motors and generators have many similarities.
+        </p>
+        <img src="generator.jpg" alt="">
+        <h3>Types of <b> Electric Generators</b></h3>
+        <p>The classification of electric generators depends on the type of electrical energy that is produced, which is either direct current or alternating current. <br><b>AC generators:</b><br>AC generators are known as single-phase generators and are limited to 25 kW. <br><b>DC generators:</b><br>These generators are divided into three categories, and they are shunt, series, and compound-wound. Shunt generators are used in battery chargers. Series generators are used in street lights. While most of the DC generators are compound-wound. </p>
+        <h3><b>Uses of an Electric Generator</b></h3>
+        <p>1)They provide the power for most power networks across cities <br>
+            2)Small scale generators provide a good backup for household power needs or small businesses <br>
+           3) At construction sites, before the power is set up, they extensively make use of electric generators <br>
+            4)Energy-efficient as fuel consumption is reduced drastically <br>
+            5)Since they give a range of voltage output, they are used in labs <br>
+            6)They are used to drive motors <br>
+            7)They are used in transportation</p>
+    </div>
+    <script>
+        window.onload = function() {
+	      lax.setup() // init
+
+        const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	      }
+
+	      window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+    <script>
+      //NAV BAR
+      const invisble = document.querySelector('.invisble');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+
+      invisble.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      })
+    </script>
+</body>
+</html>
